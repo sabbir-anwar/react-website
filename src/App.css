@@ -1,38 +1,246 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+a {
+  color: #5777ba;
+}
+
+a:hover {
+  color: #7b94c9;
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+/*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+#header {
+  height: 72px;
+  transition: all 0.5s;
+  background: #fbd7e0;
+}
+
+#header .logo a {
+  line-height: 57px;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 30px;
+}
+
+#header .logo {
+  width: 100%;
+  padding: 0 30px;
+}
+
+/*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0 50px 0;
+  background: #fbd7e0;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #5e5f63;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+#hero h2 {
+  color: #515f7d;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.ul-style {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.ul-style li {
+  float: left;
+}
+
+.ul-style li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.ul-style li a:hover {
+  color: #111111;
+}
+
+.form-wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-style {
+  border: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*--------------------------------------------------------------
+  # Input Style
+  --------------------------------------------------------------*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+section {
+  padding: 50px 0;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.section-title h2,
+h3,
+h4,
+h4,
+h5 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.section-bg {
+  background-color: #f2f5fa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+  # Products
+  --------------------------------------------------------------*/
+.products .content + .content {
+  margin-top: 100px;
+}
+
+.products .content h3 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #47536e;
+}
+
+.products .content p:last-child {
+  margin-bottom: 0;
+}
+
+.products .card-p {
+  font-size: 14px;
+}
+/*--------------------------------------------------------------
+  # Store
+  --------------------------------------------------------------*/
+.store .content + .content {
+  margin-top: 100px;
+}
+
+.store .content h2 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #47536e;
+}
+
+/*--------------------------------------------------------------
+  # Form Section
+  --------------------------------------------------------------*/
+.form-section .content + .content {
+  margin-top: 100px;
+}
+
+.form-section .content h3 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #47536e;
+}
+
+.form-section .content p:last-child {
+  margin-bottom: 0;
+}
+
+.form-section .btn {
+  margin: 5px;
+}
+
+.form-section .btn-active {
+  color: #000;
+  background: #ffb74d;
+  font-weight: 500;
+  font-size: 15px;
+  display: inline-block;
+  padding: 10px 50px 10px 50px;
+  border-radius: 35px;
+  transition: 0.5s;
+}
+
+.form-section .btn-inactive {
+  color: #000;
+  background: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  display: inline-block;
+  padding: 10px 30px 10px 30px;
+  border-radius: 35px;
+  border: solid 1px #000;
+  transition: 0.5s;
+}
+
+/*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+#footer {
+  background-color: #fbd7e0;
+  height: 60px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+.copyright p {
+  margin-bottom: 0;
+  font-weight: bold;
 }
